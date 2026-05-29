@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "uniqueId": 100000033,
+  "songName": "Example \u2014 wide tempo swings",
+  "performedBy": [],
+  "writtenBy": [],
+  "seed": 100000033,
+  "tempo": 120,
+  "customTempoSections": [
+    {
+      "tempo": 120,
+      "startAbsoluteTime": 0
+    },
+    {
+      "tempo": 60,
+      "startAbsoluteTime": 45
+    },
+    {
+      "tempo": 240,
+      "startAbsoluteTime": 105
+    },
+    {
+      "tempo": 120,
+      "startAbsoluteTime": 150
+    }
+  ],
+  "beatOffset": 0,
+  "startSongOffset": 0,
+  "endSongOffset": 0,
+  "uEAssetName": "Example \u2014 wide tempo swings",
+  "originalAudioFileHash": "<sha1 of source audio>",
+  "originalAudioFilePath": "./audio/tempo_swings.mp3"
+}

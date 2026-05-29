@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "uniqueId": 100000004,
+  "songName": "Example \u2014 extreme beat offset",
+  "performedBy": [],
+  "writtenBy": [],
+  "seed": 100000004,
+  "tempo": 120,
+  "customTempoSections": [
+    {
+      "tempo": 120,
+      "startAbsoluteTime": 0
+    }
+  ],
+  "beatOffset": 500,
+  "startSongOffset": 0,
+  "endSongOffset": 0,
+  "uEAssetName": "Example \u2014 extreme beat offset",
+  "originalAudioFileHash": "<sha1 of source audio>",
+  "originalAudioFilePath": "./audio/beat_offset.mp3"
+}

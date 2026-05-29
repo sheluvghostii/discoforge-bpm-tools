@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "uniqueId": 100000001,
+  "songName": "Example \u2014 steady 120 BPM",
+  "performedBy": [],
+  "writtenBy": [],
+  "seed": 100000001,
+  "tempo": 120,
+  "customTempoSections": [
+    {
+      "tempo": 120,
+      "startAbsoluteTime": 0
+    }
+  ],
+  "beatOffset": 0,
+  "startSongOffset": 0,
+  "endSongOffset": 0,
+  "uEAssetName": "Example \u2014 steady 120 BPM",
+  "originalAudioFileHash": "<sha1 of source audio>",
+  "originalAudioFilePath": "./audio/steady_bpm.mp3"
+}

@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "uniqueId": 100000002,
+  "songName": "Example \u2014 top-level vs sections",
+  "performedBy": [],
+  "writtenBy": [],
+  "seed": 100000002,
+  "tempo": 60,
+  "customTempoSections": [
+    {
+      "tempo": 120,
+      "startAbsoluteTime": 0
+    }
+  ],
+  "beatOffset": 0,
+  "startSongOffset": 0,
+  "endSongOffset": 0,
+  "uEAssetName": "Example \u2014 top-level vs sections",
+  "originalAudioFileHash": "<sha1 of source audio>",
+  "originalAudioFilePath": "./audio/tempo_sections.mp3"
+}
