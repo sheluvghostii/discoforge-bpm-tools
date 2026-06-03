@@ -1,6 +1,6 @@
 # discoforge-bpm-tools
 
-beat-aware bpm detection with octave-error correction. mit-licensed reference implementations from the [discoforge](https://discoforge.pplx.app) audio pipeline.
+beat-aware bpm detection with octave-error correction. mit-licensed reference implementations from the [discoforge](https://discoforge.netlify.app) audio pipeline.
 
 [![ci](https://github.com/sheluvghostii/discoforge-bpm-tools/actions/workflows/ci.yml/badge.svg)](https://github.com/sheluvghostii/discoforge-bpm-tools/actions/workflows/ci.yml)
 [![python](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/)
@@ -8,13 +8,13 @@ beat-aware bpm detection with octave-error correction. mit-licensed reference im
 
 ## what this is
 
-a single-file python implementation of the bpm-detection technique used by [discoforge](https://discoforge.pplx.app) — a tool that automates the painful per-song setup process for [dead as disco](https://store.steampowered.com/app/3404260)'s custom song import system.
+a single-file python implementation of the bpm-detection technique used by [discoforge](https://discoforge.netlify.app) — a tool that automates the painful per-song setup process for [dead as disco](https://store.steampowered.com/app/3404260)'s custom song import system.
 
 librosa's default tempo estimator works on the tempogram and can return a value that is exactly half, double, or a nearby harmonic (e.g. 4/3×) of the true bpm — a common failure mode on music with strong sub-beat energy or syncopated patterns. this module adds a post-processing pass that re-scores six octave-related bpm candidates (0.5×, 0.75×, 1.0×, 1.33×, 1.5×, 2.0× the raw estimate) using onset-envelope autocorrelation, then picks the one whose implied beat period best fits the actual rhythmic energy.
 
 ## what this is not
 
-this is the detection core. it does not produce a `meta.json`, does not interact with any game engine, does not include the batch processor, the tempo-section detector, or the windows gui. for the full pipeline that turns audio files into ready-to-import dead-as-disco songs, see [discoforge.pplx.app](https://discoforge.pplx.app).
+this is the detection core. it does not produce a `meta.json`, does not interact with any game engine, does not include the batch processor, the tempo-section detector, or the windows gui. for the full pipeline that turns audio files into ready-to-import dead-as-disco songs, see [discoforge.netlify.app](https://discoforge.netlify.app).
 
 ## algorithm
 
@@ -78,6 +78,6 @@ mit license. see [LICENSE](LICENSE) and [THIRD_PARTY_LICENSES.md](THIRD_PARTY_LI
 
 ## context
 
-this code, the [r/rhythmgames writeup](https://www.reddit.com/r/rhythmgames/comments/1tooyts/), and [discoforge.pplx.app](https://discoforge.pplx.app) are all from the same project. the closed-source desktop app at discoforge.pplx.app wraps this technique into a one-drag-drop pipeline plus tempo-section detection, batch processing, and direct meta.json writing into the dead-as-disco importedsongs folder. the binary is pay-what-you-want with a $0 minimum.
+this code, the [r/rhythmgames writeup](https://www.reddit.com/r/rhythmgames/comments/1tooyts/), and [discoforge.netlify.app](https://discoforge.netlify.app) are all from the same project. the closed-source desktop app at discoforge.netlify.app wraps this technique into a one-drag-drop pipeline plus tempo-section detection, batch processing, and direct meta.json writing into the dead-as-disco importedsongs folder. the binary is pay-what-you-want with a $0 minimum.
 
 if you want to read more of the engineering write-up, the r/rhythmgames post covers the in-game `customTempoSections` finding and the beat-offset clamp behaviour discovered along the way.
